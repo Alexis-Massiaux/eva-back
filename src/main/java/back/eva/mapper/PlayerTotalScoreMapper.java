@@ -10,8 +10,10 @@ public class PlayerTotalScoreMapper {
 	
 	public static PlayerTotalScoreDto toDto( PlayerTotalScore playerTotalScore ) {
 		
-		return new PlayerTotalScoreDto(
-				playerTotalScore.getUsername(),
-				playerTotalScore.getKillDeathRatio() );
+		return PlayerTotalScoreDto.builder()
+				.username( playerTotalScore.getUsername() )
+				.killDeathRatio( playerTotalScore.getKillDeathRatio() )
+				.build();
 	}
 }
+
