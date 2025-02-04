@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eva
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eva?currentSchema=eva
+    username: mcdo_local
+    password: 12Zerty
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
