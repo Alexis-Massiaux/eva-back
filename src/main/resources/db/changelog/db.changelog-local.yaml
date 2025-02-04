@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: classpath:/db/changelog/migrations/create-table.sql
+  - include:
+      file: classpath:/db/changelog/migrations/local/create-dataset.sql
